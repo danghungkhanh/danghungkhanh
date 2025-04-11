@@ -1,0 +1,151 @@
+/* Main Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Dashboard */
+.jumbotron {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.logo-container {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: bold;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: #86b7fe;
+}
+
+/* Room status colors */
+.status-empty {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-occupied {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.status-full {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.status-maintenance {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+/* Admin panels */
+.admin-dashboard-card {
+    min-height: 160px;
+}
+
+.admin-dashboard-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin-stat {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Payment status */
+.payment-pending {
+    color: #664d03;
+}
+
+.payment-completed {
+    color: #0f5132;
+}
+
+.payment-overdue {
+    color: #842029;
+}
+
+
+/* Print styles */
+@media print {
+    header, footer, .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Custom button styles */
+.btn-custom-primary {
+    background-color: #006A4E;
+    border-color: #006A4E;
+    color: white;
+}
+
+.btn-custom-primary:hover {
+    background-color: #005541;
+    border-color: #005541;
+    color: white;
+} 
+.logo-container {
+    width: 100%;
+    overflow: hidden; /* Đảm bảo không có cuộn */
+}
+
+.logo-container img {
+    width: 100%; /* Đặt chiều rộng hình ảnh là 100% */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    display: block; /* Đảm bảo không có khoảng trống bên dưới hình ảnh */
+}
